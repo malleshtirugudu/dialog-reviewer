@@ -1,0 +1,28 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<style>
+  .appContainer {
+    display: flex;
+  }
+  .pageContent {
+    position: relative;
+    padding: 0 16px;
+    width: calc(100% - 220px);
+  }
+</style>
+
+<div class="appContainer">
+  <app-sidenav></app-sidenav>
+  <div class="pageContent" role="main">
+    <!-- header -->
+    <app-header></app-header>
+  </div>
+</div>
+<router-outlet></router-outlet>

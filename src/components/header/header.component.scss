@@ -1,0 +1,28 @@
+/* header style files */
+@import '../../assets/scss/variables.scss';
+
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: $white;
+  border-bottom: 1px solid $border;
+  color: $white;
+  box-shadow: 0px 2px 4px rgba($black, 0.0338724);
+  img {
+    margin: 0 16px;
+  }
+  #twitter-logo {
+    height: 40px;
+    margin: 0 16px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+  
+  
