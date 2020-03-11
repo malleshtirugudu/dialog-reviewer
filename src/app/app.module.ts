@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderModule } from 'src/components/header/header.module';
 import { SidenavModule } from 'src/components/sidenav/sidenav.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UsertableModule } from 'src/components/usertable/usertable.module';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     SidenavModule,
     HeaderModule,
+    UsertableModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],

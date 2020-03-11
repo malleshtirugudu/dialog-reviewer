@@ -13,8 +13,11 @@
   }
   .pageContent {
     position: relative;
-    padding: 0 16px;
+    padding-top: 70px;
     width: calc(100% - 220px);
+  }
+  .user-table {
+    padding: 30px;
   }
 </style>
 
@@ -23,6 +26,9 @@
   <div class="pageContent" role="main">
     <!-- header -->
     <app-header></app-header>
+    <div class="user-table">
+      <app-usertable></app-usertable>
+    </div>
   </div>
 </div>
 <router-outlet></router-outlet>
