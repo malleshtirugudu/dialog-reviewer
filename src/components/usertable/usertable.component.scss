@@ -1,18 +1,54 @@
 table {
   width: 100%;
   box-shadow: none;
+  font-family: 'PT Sans', sans-serif;
   tr {
     &.example-detail-row {
       height: 0;
     }
+    th {
+      font-size: 13px;
+      color: #C4CAD2;
+      text-transform: uppercase;
+      font-style: italic;
+      font-weight: normal;
+      border: none;
+    }
+    td {
+      border: none;
+    }
+    .link {
+      color: #3187ED;
+      cursor: pointer;
+    }
+    &.example-element-row {
+      background-color: #F7FAFE;
+      border-radius: 5px;
+    }
+    &:nth-child(3),
+    &:nth-child(7),
+    &:nth-child(11),
+    &:nth-child(15),
+    &:nth-child(19),
+    &:nth-child(23),
+    &:nth-child(27),
+    &:nth-child(31),
+    &:nth-child(35) {
+      background-color: #fff;
+    }
+    &.example-expanded-row {
+      background-color: #DFECFD;
+      border-radius: 5px;
+    }
+    &.example-element-detail {
+      background-color: #fff;
+      border-radius: 5px;
+    }
   }
 }
-tr.example-element-row:not(.example-expanded-row):hover {
-  background: whitesmoke;
-}
-  
-tr.example-element-row:not(.example-expanded-row):active {
-  background: #efefef;
+.table-scroll {
+  height: calc(100vh - 165px);
+  overflow: auto;
 }
 
 .example-element-row td {
@@ -31,4 +67,7 @@ tr.example-element-row:not(.example-expanded-row):active {
 .example-element-description-attribution {
   opacity: 0.5;
 }
-  
+
+.mat-paginator {
+  border-top: 1px solid #E0E7F4;
+}

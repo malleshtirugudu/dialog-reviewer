@@ -29,6 +29,3 @@ $dialog-reviewer-theme: mat-light-theme($dialog-reviewer-primary, $dialog-review
 /* You can add global styles to this file, and also import other style files */
 @import 'assets/scss/variables.scss';
 @import 'assets/scss/helper.scss';
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
   selector: 'app-usertable',
@@ -14,102 +16,107 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
   ],
 })
 
-export class UsertableComponent {
-  dataSource = ELEMENT_DATA;
-  columnsToDisplay = ['UserId', 'Timestamp', 'Conversation', 'Rating', 'FeedBack', 'ReviewStatus'];
+export class UsertableComponent implements OnInit {
+  dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
+  columnsToDisplay = ['userId', 'timestamp', 'conversation', 'rating', 'feedBack', 'reviewStatus'];
   expandedElement: PeriodicElement | null;
+  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
+
+  ngOnInit() {
+    this.dataSource.paginator = this.paginator;
+  }  
 }
 
 export interface PeriodicElement {
-  Timestamp: string;
-  UserId: number;
-  Conversation: string;
-  Rating: string;
-  FeedBack: string,
-  ReviewStatus: string,
+  timestamp: string;
+  userId: number;
+  conversation: string;
+  rating: string;
+  feedBack: string,
+  reviewStatus: string,
   description: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
   {
-    UserId: 1,
-    Timestamp: '20-02-2020 00:24:59',
-    Conversation: '12 Total Converation',
-    Rating: '1 Star',
-    FeedBack: 'Good',
-    ReviewStatus: 'Partially Completed',
+    userId: 1,
+    timestamp: '20-02-2020 00:24:59',
+    conversation: '12 Total Converation',
+    rating: '1 Star',
+    feedBack: 'Good',
+    reviewStatus: 'Partially Completed',
     description: `Conversation Log comes here`
   }, {
-    UserId: 2,
-    Timestamp: '20-02-2020 03:10:10',
-    Conversation: '4 Total Converation',
-    Rating: '2 Star',
-    FeedBack: 'Ok',
-    ReviewStatus: 'Completed',
+    userId: 2,
+    timestamp: '20-02-2020 03:10:10',
+    conversation: '4 Total Converation',
+    rating: '2 Star',
+    feedBack: 'Ok',
+    reviewStatus: 'Completed',
     description: `Conversation Log comes here`
   }, {
-    UserId: 3,
-    Timestamp: '20-02-2020 05:04:13',
-    Conversation: '10 Total Converation',
-    Rating: '5 Star',
-    FeedBack: 'Not Bad',
-    ReviewStatus: 'Not Started',
+    userId: 3,
+    timestamp: '20-02-2020 05:04:13',
+    conversation: '10 Total Converation',
+    rating: '5 Star',
+    feedBack: 'Not Bad',
+    reviewStatus: 'Not Started',
     description: `Conversation Log comes here`
   }, {
-    UserId: 4,
-    Timestamp: '20-02-2020 06:00:05',
-    Conversation: '13 Total Converation',
-    Rating: '3 Star',
-    FeedBack: 'Bad',
-    ReviewStatus: 'Not Started',
+    userId: 4,
+    timestamp: '20-02-2020 06:00:05',
+    conversation: '13 Total Converation',
+    rating: '3 Star',
+    feedBack: 'Bad',
+    reviewStatus: 'Not Started',
     description: `Conversation Log comes here`
   }, {
-    UserId: 5,
-    Timestamp: '20-02-2020 07:24:59',
-    Conversation: '14 Total Converation',
-    Rating: '1 Star',
-    FeedBack: 'Good',
-    ReviewStatus: 'Completed',
+    userId: 5,
+    timestamp: '20-02-2020 07:24:59',
+    conversation: '14 Total Converation',
+    rating: '1 Star',
+    feedBack: 'Good',
+    reviewStatus: 'Completed',
     description: `Conversation Log comes here`
   }, {
-    UserId: 6,
-    Timestamp: '20-02-2020 08:10:10',
-    Conversation: '12 Total Converation',
-    Rating: '5 Star',
-    FeedBack: 'Not Bad',
-    ReviewStatus: 'Completed',
+    userId: 6,
+    timestamp: '20-02-2020 08:10:10',
+    conversation: '12 Total Converation',
+    rating: '5 Star',
+    feedBack: 'Not Bad',
+    reviewStatus: 'Completed',
     description: `Conversation Log comes here`
   }, {
-    UserId: 7,
-    Timestamp: '20-02-2020 08:24:13',
-    Conversation: '9 Total Converation',
-    Rating: '1 Star',
-    FeedBack: 'Good',
-    ReviewStatus: 'Completed',
+    userId: 7,
+    timestamp: '20-02-2020 08:24:13',
+    conversation: '9 Total Converation',
+    rating: '1 Star',
+    feedBack: 'Good',
+    reviewStatus: 'Completed',
     description: `Conversation Log comes here`
   }, {
-    UserId: 8,
-    Timestamp: '20-02-2020 09:00:05',
-    Conversation: '11 Total Converation',
-    Rating: '3 Star',
-    FeedBack: 'Good',
-    ReviewStatus: 'Partially Completed',
+    userId: 8,
+    timestamp: '20-02-2020 09:00:05',
+    conversation: '11 Total Converation',
+    rating: '3 Star',
+    feedBack: 'Good',
+    reviewStatus: 'Partially Completed',
     description: `Conversation Log comes here`
   }, {
-    UserId: 9,
-    Timestamp: '9,20-02-2020 12:24:59,',
-    Conversation: '4 Total Converation',
-    Rating: '4 Star',
-    FeedBack: 'Not Bad',
-    ReviewStatus: 'Completed',
+    userId: 9,
+    timestamp: '9,20-02-2020 12:24:59,',
+    conversation: '4 Total Converation',
+    rating: '4 Star',
+    feedBack: 'Not Bad',
+    reviewStatus: 'Completed',
     description: `Conversation Log comes here`
   }, {
-    UserId: 10,
-    Timestamp: '20-02-2020 09:00:05',
-    Conversation: '8 Total Converation',
-    Rating: '5 Star',
-    FeedBack: 'Bad',
-    ReviewStatus: 'Partially Completed',
+    userId: 10,
+    timestamp: '20-02-2020 09:00:05',
+    conversation: '8 Total Converation',
+    rating: '5 Star',
+    feedBack: 'Bad',
+    reviewStatus: 'Partially Completed',
     description: `Conversation Log comes here`
   },
 ];

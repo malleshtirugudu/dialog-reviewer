@@ -1,0 +1,12 @@
+.appContainer {
+  display: flex;
+}
+.pageContent {
+	position: relative;
+	padding-top: 70px;
+	width: calc(100% - 220px);
+}
+.user-table {
+	padding: 30px;
+	padding-bottom: 0;
+}
