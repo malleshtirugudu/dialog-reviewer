@@ -5,6 +5,9 @@ table {
   tr {
     &.example-detail-row {
       height: 0;
+      td {
+        padding: 0;
+      }
     }
     th {
       font-size: 13px;
@@ -43,11 +46,12 @@ table {
     &.example-element-detail {
       background-color: #fff;
       border-radius: 5px;
+      padding: 0;
     }
   }
 }
 .table-scroll {
-  height: calc(100vh - 165px);
+  max-height: calc(100vh - 165px);
   overflow: auto;
 }
 
@@ -62,6 +66,7 @@ table {
     
 .example-element-description {
   padding: 16px;
+  width: 100%;
 }
   
 .example-element-description-attribution {

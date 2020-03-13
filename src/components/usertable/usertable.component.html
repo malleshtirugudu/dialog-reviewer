@@ -49,7 +49,7 @@
         <div class="example-element-detail"
             [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
           <div class="example-element-description">
-            <b>{{element.description}} {{element.UserId}}</b>
+            <app-conversation-log></app-conversation-log>
           </div>
         </div>
       </td>
@@ -66,3 +66,5 @@
 </div>
 <!-- paginator -->
 <mat-paginator [pageSizeOptions]="[10, 15, 20]" showFirstLastButtons></mat-paginator>
+
+

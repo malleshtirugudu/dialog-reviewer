@@ -1,0 +1,359 @@
+<div class="conversationLogs">
+  <div class="sectionHeader">
+    <span>Converstaion log</span>
+  </div>
+  <div class="searchInput">
+    <div class="searchImg">
+      <img src="../../assets/images/ic_search.svg" alt="" />
+    </div>
+    <input type="text" placeholder="Conversation Log" />
+  </div>
+  <div class="logsList">
+    <!-- Assistant Message -->
+    <div class="messageBubble">
+      <div class="bubbleHeader">
+        <div class="messageIcon">
+          <img src="../../assets/images/ic_message-bubble.svg" alt="Assistant" />
+        </div>
+        <div class="messageType">Assistant</div>
+        <div 
+          class="messageAction"
+        >
+          <span class="dotsIcon"><img src="../../assets/images/ic_dots.svg" alt="Edit" /></span>
+          <span class="editIcon"><img src="../../assets/images/ic_edit.svg" alt="Edit" /></span>
+        </div>
+      </div>
+      <div class="bubbleBody">
+        <div class="boxBg"></div>
+      </div>
+    </div>
+    <!-- user Message -->
+    <div class="messageBubble userBubble">
+      <div class="bubbleHeader">
+        <div class="messageIcon">
+          <img src="../../assets/images/ic_message-bubble_user.svg" alt="Assistant" />
+        </div>
+        <div class="messageType">Ryan Sterling</div>
+        <div class="messageAction">
+          <span class="dotsIcon"><img src="../../assets/images/ic_dots.svg" alt="Edit" /></span>
+          <span class="editIcon"><img src="../../assets/images/ic_edit.svg" alt="Edit" /></span>
+        </div>
+      </div>
+      <div class="bubbleBody">
+        <div class="boxBg"></div>
+        <div class="messageBox">
+          <p>I would like to cancel my flight to Florida on Wednesday October 3rd.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Assistant Message -->
+    <div class="messageBubble">
+      <div class="bubbleHeader">
+        <div class="messageIcon">
+          <img src="../../assets/images/ic_message-bubble.svg" alt="Assistant" />
+        </div>
+        <div class="messageType">Assistant</div>
+        <div class="messageAction">
+          <span class="dotsIcon"><img src="../../assets/images/ic_dots.svg" alt="Edit" /></span>
+          <span class="editIcon"><img src="../../assets/images/ic_edit.svg" alt="Edit" /></span>
+        </div>
+      </div>
+      <div class="bubbleBody">
+        <div class="boxBg"></div>
+        <div class="messageBox">
+          <p>I can help you out with that! Can you provide me with your last name and flight confirmation number?</p>
+          <div class="messageBox">
+            <p>Hi there, what can I help you with?</p>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <!-- user Message -->
+    <div class="messageBubble userBubble">
+      <div class="bubbleHeader">
+        <div class="messageIcon">
+          <img src="../../assets/images/ic_message-bubble_user.svg" alt="Assistant" />
+        </div>
+        <div class="messageType">Ryan Sterling</div>
+        <div
+          class="messageAction"
+          ng-click="addSingleClass()"
+        >
+          <span class="dotsIcon"><img src="../../assets/images/ic_dots.svg" alt="Edit" /></span>
+          <span class="editIcon"><img src="../../assets/images/ic_edit.svg" alt="Edit" /></span>
+        </div>
+      </div>
+      <div class="bubbleBody">
+        <div class="boxBg"></div>
+        <div class="messageBox">
+          <p>My last name is Black, and the flight confirmation number is D987302.</p>
+            <!-- form -->
+            <div
+              class="webForm"
+              ng-class="{'bg-success':class_status }"
+            >
+              <h2>Would you like to add a comment or add a training sample to an existing skill?</h2>
+              <div class="formGroup radioGroup">
+                <input id="yes" type="radio" name="question" />
+                <label for="yes">Yes</label>
+                <input id="no" type="radio" name="question" />
+                <label for="no">No</label>
+              </div>
+              <div class="formGroup">
+                <label>Select intent</label>
+                <select>
+                  <option>Find Baggage Allowance</option>
+                  <option>Restricted Items</option>
+                  <option>Trace Delayed Baggage</option>
+                  <option>Delayed Baggage</option>
+                  <option>Contact for Delayed Baggage</option>
+                  <option>Report Delayed Baggage</option>
+                </select>
+              </div>
+              <div class="formGroup">
+                <label>Response</label>
+                <textarea>There is no limit to the number of excess pieces you can check in, however excess fees may apply and vary based on your destination and fare.</textarea>
+              </div>
+              <div class="formGroup">
+                <label>Comment</label>
+                <textarea>There is no limit to the number of excess pieces you can check in, however excess fees may apply and vary based on your destination and fare.</textarea>
+              </div>
+              <div class="formActions">
+                <button class="cancelBtn">Cancel</button>
+                <button>Submit</button>
+              </div>
+            </div>          
+        </div>
+      </div>
+    </div>
+    <!-- Assistant Message -->
+    <div class="messageBubble">
+      <div class="bubbleHeader">
+        <div class="messageIcon">
+          <img src="../../assets/images/ic_message-bubble.svg" alt="Assistant" />
+        </div>
+        <div class="messageType">Assistant</div>
+        <div class="messageAction">
+          <span class="dotsIcon"><img src="../../assets/images/ic_dots.svg" alt="Edit" /></span>
+          <span class="editIcon"><img src="../../assets/images/ic_edit.svg" alt="Edit" /></span>
+        </div>
+      </div>
+      <div class="bubbleBody">
+        <div class="boxBg"></div>
+        <div class="messageBox">
+          <p>Thank you for providing that information. Please give me a minute to look up the flight and details of your purchase.</p>
+          <p>Are you aware of our $95 cancelation fee?</p>
+        </div>
+      </div>
+    </div>
+    <!-- user Message -->
+    <div class="messageBubble userBubble">
+      <div class="bubbleHeader">
+        <div class="messageIcon">
+          <img src="../../assets/images/ic_message-bubble_user.svg" alt="Assistant" />
+        </div>
+        <div class="messageType">Ryan Sterling</div>
+        <div class="messageAction">
+          <span class="dotsIcon"><img src="../../assets/images/ic_dots.svg" alt="Edit" /></span>
+          <span class="editIcon"><img src="../../assets/images/ic_edit.svg" alt="Edit" /></span>
+        </div>
+      </div>
+      <div class="bubbleBody">
+        <div class="boxBg"></div>
+        <div class="messageBox">
+          <p>I was not. Can I be exempt from the cancelation fee?</p>
+        </div>
+      </div>
+    </div>
+    <!-- Assistant Message -->
+    <div class="messageBubble">
+      <div class="bubbleHeader">
+        <div class="messageIcon">
+          <img src="../../assets/images/ic_message-bubble.svg" alt="Assistant" />
+        </div>
+        <div class="messageType">Assistant</div>
+        <div class="messageAction">
+          <span class="dotsIcon"><img src="../../assets/images/ic_dots.svg" alt="Edit" /></span>
+          <span class="editIcon"><img src="../../assets/images/ic_edit.svg" alt="Edit" /></span>
+        </div>
+      </div>
+      <div class="bubbleBody">
+        <div class="boxBg"></div>
+        <div class="messageBox">
+          <p>I am afraid not.</p>
+        </div>
+      </div>
+    </div>
+    <!-- user Message -->
+    <div class="messageBubble userBubble">
+      <div class="bubbleHeader">
+        <div class="messageIcon">
+          <img src="../../assets/images/ic_message-bubble_user.svg" alt="Assistant" />
+        </div>
+        <div class="messageType">Ryan Sterling</div>
+        <div class="messageAction">
+          <span class="dotsIcon"><img src="../../assets/images/ic_dots.svg" alt="Edit" /></span>
+          <span class="editIcon"><img src="../../assets/images/ic_edit.svg" alt="Edit" /></span>
+        </div>
+      </div>
+      <div class="bubbleBody">
+        <div class="boxBg"></div>
+        <div class="messageBox">
+          <p>Ok</p>
+        </div>
+      </div>
+    </div>
+    <!-- Assistant Message -->
+    <div class="messageBubble">
+      <div class="bubbleHeader">
+        <div class="messageIcon">
+          <img src="../../assets/images/ic_message-bubble.svg" alt="Assistant" />
+        </div>
+        <div class="messageType">Assistant</div>
+        <div class="messageAction">
+          <span class="dotsIcon"><img src="../../assets/images/ic_dots.svg" alt="Edit" /></span>
+          <span class="editIcon"><img src="../../assets/images/ic_edit.svg" alt="Edit" /></span>
+        </div>
+      </div>
+      <div class="bubbleBody">
+        <div class="boxBg"></div>
+        <div class="messageBox">
+          <p>I have found your purchase details and am able to cancel your ticket and refund you $365 (that is with the $95 taken out already).</p>
+          <p>Do I have your approval to cancel the purchase?</p>
+        </div>
+      </div>
+    </div>
+    <!-- user Message -->
+    <div class="messageBubble userBubble">
+      <div class="bubbleHeader">
+        <div class="messageIcon">
+          <img src="../../assets/images/ic_message-bubble_user.svg" alt="Assistant" />
+        </div>
+        <div class="messageType">Ryan Sterling</div>
+        <div class="messageAction">
+          <span class="dotsIcon"><img src="../../assets/images/ic_dots.svg" alt="Edit" /></span>
+          <span class="editIcon"><img src="../../assets/images/ic_edit.svg" alt="Edit" /></span>
+        </div>
+      </div>
+      <div class="bubbleBody">
+        <div class="boxBg"></div>
+        <div class="messageBox">
+          <p>Yes.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Assistant Message -->
+    <div class="messageBubble">
+      <div class="bubbleHeader">
+        <div class="messageIcon">
+          <img src="../../assets/images/ic_message-bubble.svg" alt="Assistant" />
+        </div>
+        <div class="messageType">Assistant</div>
+        <div class="messageAction">
+          <span class="dotsIcon"><img src="../../assets/images/ic_dots.svg" alt="Edit" /></span>
+          <span class="editIcon"><img src="../../assets/images/ic_edit.svg" alt="Edit" /></span>
+        </div>
+      </div>
+      <div class="bubbleBody">
+        <div class="boxBg"></div>
+        <div class="messageBox">
+          <p>Ok, I just refunded the funds. You should see the funds back in your account within the next 2-4 business days.</p>
+        </div>
+      </div>
+    </div>
+    <!-- user Message -->
+    <div class="messageBubble userBubble">
+      <div class="bubbleHeader">
+        <div class="messageIcon">
+          <img src="../../assets/images/ic_message-bubble_user.svg" alt="Assistant" />
+        </div>
+        <div class="messageType">Ryan Sterling</div>
+        <div class="messageAction">
+          <span class="dotsIcon"><img src="../../assets/images/ic_dots.svg" alt="Edit" /></span>
+          <span class="editIcon"><img src="../../assets/images/ic_edit.svg" alt="Edit" /></span>
+        </div>
+      </div>
+      <div class="bubbleBody">
+        <div class="boxBg"></div>
+        <div class="messageBox">
+          <p>Ok. Thank you.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Assistant Message -->
+    <div class="messageBubble">
+      <div class="bubbleHeader">
+        <div class="messageIcon">
+          <img src="../../assets/images/ic_message-bubble.svg" alt="Assistant" />
+        </div>
+        <div class="messageType">Assistant</div>
+        <div class="messageAction">
+          <span class="dotsIcon"><img src="../../assets/images/ic_dots.svg" alt="Edit" /></span>
+          <span class="editIcon"><img src="../../assets/images/ic_edit.svg" alt="Edit" /></span>
+        </div>
+      </div>
+      <div class="bubbleBody">
+        <div class="boxBg"></div>
+        <div class="messageBox">
+          <p>You’re welcome! Is there anything else I can do for you today?</p>
+        </div>
+      </div>
+    </div>
+    <!-- user Message -->
+    <div class="messageBubble userBubble">
+      <div class="bubbleHeader">
+        <div class="messageIcon">
+          <img src="../../assets/images/ic_message-bubble_user.svg" alt="Assistant" />
+        </div>
+        <div class="messageType">Ryan Sterling</div>
+        <div class="messageAction">
+          <span class="dotsIcon"><img src="../../assets/images/ic_dots.svg" alt="Edit" /></span>
+          <span class="editIcon"><img src="../../assets/images/ic_edit.svg" alt="Edit" /></span>
+        </div>
+      </div>
+      <div class="bubbleBody">
+        <div class="boxBg"></div>
+        <div class="messageBox">
+          <p>I am not sure where my flight is at?</p>
+        </div>
+      </div>
+    </div>
+    <!-- Assistant Message -->
+    <div class="messageBubble">
+      <div class="bubbleHeader">
+        <div class="messageIcon">
+          <img src="../../assets/images/ic_message-bubble.svg" alt="Assistant" />
+        </div>
+        <div class="messageType">Assistant</div>
+        <div class="messageAction">
+          <span class="dotsIcon"><img src="../../assets/images/ic_dots.svg" alt="Edit" /></span>
+          <span class="editIcon"><img src="../../assets/images/ic_edit.svg" alt="Edit" /></span>
+        </div>
+      </div>
+      <div class="bubbleBody">
+        <div class="boxBg"></div>
+        <div class="messageBox">
+          <ul class="buttonGroup">
+            <li>
+              <span>How to check my flight status online?</span>
+              <span class="rightArrow"><img src="../../assets/images/ic_arrow-right.svg" alt="" /></span>
+            </li>
+            <li>
+              <span>Why my flight got delayed?</span>
+              <span class="rightArrow"><img src="../../assets/images/ic_arrow-right.svg" alt="" /></span>
+            </li>
+            <li>
+              <span>How to enable SMS notifications about flight status changes</span>
+              <span class="rightArrow"><img src="../../assets/images/ic_arrow-right.svg" alt="" /></span>
+            </li>
+          </ul>
+          <ul class="quickReplies">
+            <li>Suivre un Autre Vol</li>
+            <li>Annuler un Vol</li>
+            <li>Demander un Remboursement</li>
+          </ul>
+        </div>
+      </div>
+    </div>    
+  </div>
+</div>

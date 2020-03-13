@@ -1,0 +1,228 @@
+.conversationLogs {
+	padding: 10px 20px;
+}
+.sectionHeader {
+	border-bottom: 1px solid #EEF3F5;
+	font-size: 12px;
+	line-height: 14px;
+	text-transform: uppercase;
+	font-style: italic;
+	color: #586B84;
+	padding-bottom: 8px;
+	display: flex;
+	align-items: center;
+}
+.searchInput {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  input {
+    border: none;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #586B84;
+    height: 38px;
+    width: 100%;
+    &:hover,
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.searchImg {
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+
+.logsList {
+  padding: 0;
+  //max-height: 500px;
+  //overflow: auto;
+}
+
+.messageBubble {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #A9B4C3;
+  font-weight: normal;
+  .bubbleHeader {
+    display: flex;
+    align-items: center;
+    .messageIcon {
+      padding-right: 12px;
+      img {
+        max-width: 18px;
+      }
+    }
+    .messageType {
+      font-style: italic;
+    }
+    .messageAction {
+      padding-left: 15px;
+      cursor: pointer;
+      display: flex;
+      align-items: baseline;
+      .dotsIcon {
+        position: relative;
+        bottom: -3px;
+      }
+      .editIcon {
+        padding-left: 4px;
+      }
+    }
+  }
+  .bubbleBody {
+    padding-top: 10px;
+    font-size: 12px;
+    display: flex;
+    .boxBg {
+      width: 18px;
+      background-image: url(../../assets/images/circle-bg.png);
+      background-position: 50% top;
+      background-repeat: repeat-y;
+      margin-left: -2px;
+      background-size: 4px;
+    }
+    .messageBox {
+      padding-left: 14px;
+      width: calc(100% - 18px);
+      p {
+        margin-top: 0;
+        margin-bottom: 6px;
+      }
+    }
+  }
+  &.userBubble {
+    color: #111111;
+  }
+}
+
+.buttonGroup {
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  max-width: 280px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  li {
+    font-size: 14px;
+    line-height: 18px;
+    color: #AFB7C1;
+    list-style-type: none;
+    padding: 15px;
+    border-bottom: 1px solid #F6F6F8;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:last-child {
+      border-bottom: none;
+    }
+    span {
+      &:first-child {
+        width: calc(100% - 20px);
+      }
+    }
+    .rightArrow {
+      margin-left: auto;
+      width: 10px;
+    }
+  }
+}
+
+.quickReplies {
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+  max-width: 360px;
+  li {
+    font-size: 14px;
+    line-height: 18px;
+    color: #AFB7C1;
+    list-style-type: none;
+    padding: 15px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    min-width: 168px;
+    cursor: pointer;
+  }
+}
+
+.webForm {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #F7FAFE;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  max-width: 480px;
+  color: #111111;
+  h2 {
+    margin: 0;
+    padding-bottom: 15px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .formGroup {
+    padding-bottom: 15px;
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 13px;
+      font-weight: normal;
+    }
+    select,
+    input[type=text],
+    textarea {
+      background-color: #fff;
+      border: 1px solid #E3E6F2;
+      width: 100%;
+      padding: 10px;
+      border-radius: 3px;
+      font-size: 12px;
+      color: #A9B4C3;
+    }
+    select {
+      border-radius: 3px;
+      height: 40px;
+      appearance: none;
+      background-image: url(../../assets/images/ic_arrow-down.png);
+      background-position: 97% 50%;
+      background-repeat: no-repeat;
+      padding-right: 40px;
+    }
+  }
+  .radioGroup {
+    label {
+      display: inline;
+      padding-left: 5px;
+      padding-right: 15px;
+    }
+  }
+  .formActions {
+    text-align: right;
+    button {
+      background-color: #1D7FCD;
+      color: #fff;
+      font-size: 13px;
+      font-style: italic;
+      min-width: 100px;
+      text-align: center;
+      height: 36px;
+      padding: 10px;
+      border: none;
+      border-radius: 3px;
+      margin-left: 10px;
+      &.cancelBtn {
+        background-color: #AB4964;
+      }
+    }
+  }
+}
+
