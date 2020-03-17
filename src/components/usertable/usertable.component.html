@@ -1,3 +1,21 @@
+<div class="searchFilter">
+  <div class="dropDown">
+    <select>
+      <option>Chat</option>
+      <option>Option 01</option>
+      <option>Option 02</option>
+    </select>
+  </div>
+  <div class="searchInput">
+    <div class="searchImg">
+      <img src="../../assets/images/ic_search.svg" alt="" />
+    </div>
+    <input type="text" placeholder="Conversation Log" />
+  </div>
+  <div class="topActions">
+    <button>Export</button>
+  </div>
+</div>
 <div class="table-scroll">
   <table mat-table
         [dataSource]="dataSource" multiTemplateDataRows
@@ -64,7 +82,5 @@
     <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
   </table>
 </div>
-<!-- paginator -->
-<mat-paginator [pageSizeOptions]="[10, 15, 20]" showFirstLastButtons></mat-paginator>
 
 

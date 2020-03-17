@@ -1,3 +1,62 @@
+.searchFilter {
+  display: flex;
+  align-items: center;
+}
+.dropDown {
+  padding-right: 20px;
+  select {
+    background-color: #E4E9F6;
+    font-size: 9px;
+    color: #586B84;
+    min-width: 160px;
+    padding: 12px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    appearance: none;
+    background-image: url(../../assets/images/ic_dropdown-arrow-dark.png);
+    background-position: 92% 50%;
+    background-repeat: no-repeat;
+    padding-right: 40px;
+  }
+}
+.searchInput {
+  position: relative;
+  width: calc(100% - 290px);
+  input {
+    border: none;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #586B84;
+    height: 38px;
+    width: 100%;
+    &:hover,
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.topActions {
+  margin-left: auto;
+  button {
+    background-color: #1D7FCD;
+    color: #fff;
+    font-size: 13px;
+    min-width: 100px;
+    text-align: center;
+    height: 36px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;  
+  }
+}
+.searchImg {
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+
 table {
   width: 100%;
   box-shadow: none;
@@ -51,7 +110,7 @@ table {
   }
 }
 .table-scroll {
-  max-height: calc(100vh - 165px);
+  max-height: calc(100vh - 150px);
   overflow: auto;
 }
 
